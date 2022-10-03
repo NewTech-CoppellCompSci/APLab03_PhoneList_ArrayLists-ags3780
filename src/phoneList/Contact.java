@@ -20,5 +20,40 @@ package phoneList;
 
 
 public class Contact {
+private String Name;
+	private long Number;
+	
+	public  String getName() {
+		
+		return Name;
+	}
+
+	public void setName(String name) {
+		// makes Name = name 
+		Name = name;
+	}
+public void setNumber(long number) {
+	Number = number;
+}
+	public long getNumber() {
+		// return number
+		return Number;
+	}
+
+	public boolean equals(Contact obj) {
+		
+		return Name.equals(getName()) &&  Number==obj.getNumber();
+		//return Name.equals(getName()) &&  Number==obj.getNumber();
+
+	}
+
+	
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Name : "+Name+" Phone : "+Number;
+	}
 
 }
+   
